@@ -56,6 +56,10 @@ WSGI_APPLICATION = 'test_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
+TEMPLATE_DIRS = {
+    os.path.join(BASE_DIR, 'templates')
+}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
